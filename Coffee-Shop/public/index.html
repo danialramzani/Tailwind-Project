@@ -9,7 +9,7 @@
     <link rel="icon" href="images/fav-icon.png" type="image/png">
 </head>
 
-<body class="font-Dana">
+<body class="font-Dana bg-gray-100 dark:bg-zinc-800">
     <!-- All App Icons -->
     <svg class="hidden">
         <symbol id="shopping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -34,11 +34,11 @@
         </symbol>
     </svg>
 
-    <header class="flex items-center w-[90%] h-24 pl-4 pr-10 py-5 mx-auto bg-black/50 rounded-3xl">
-        <div class="flex justify-between w-full">
+    <header class="fixed top-9 right-0 left-0 flex items-center w-[90%] h-24 px-10 py-5 mx-auto bg-black/50 rounded-3xl">
+        <div class="flex items-center justify-between w-full">
             <!-- Logo & Menu -->
 
-            <nav class="flex gap-x-9">
+            <nav class="flex items-center gap-x-9">
                 <!-- Logo -->
 
                 <div>
@@ -46,8 +46,8 @@
                 </div>
                 <!-- Menu -->
 
-                <ul class="flex gap-x-9">
-                    <li>
+                <ul class="flex gap-x-9 text-xl text-gray-300">
+                    <li class="font-DanaMedium text-orange-200">
                         <a href="#">صفحه اصلی</a>
                     </li>
                     <!-- Has Sub -->
@@ -90,9 +90,9 @@
                 </ul>
             </nav>
             <!-- Cart & Theme Toggle & Login Link -->
-            <div class="flex">
+            <div class="flex text-xl gap-x-10 text-orange-200">
                 <!-- Cart Icon & Theme switch Btn -->
-                <div class="flex gap-x-5">
+                <div class="flex items-center gap-x-5">
                     <!-- Cart -->
                     <div>
                         <svg class="w-8 h-8">
@@ -106,12 +106,14 @@
                         </svg>
                     </div>
                 </div>
+                <!-- Divide Border -->
+                 <span class="block w-px h-14 bg-white/20"></span>
                 <!-- Login Link -->
-                <a href="#" class="flex">
-                    <svg class="w-8 h-8">
+                <a href="#" class="flex items-center gap-x-2.5">
+                    <svg class="w-8 h-8 rotate-180">
                         <use xlink:href="#arrow-left-end-on-rectangle"></use>
                     </svg>
-                    ورود | ثبت‌ نام
+                    ورود | ثبت‌نام
                 </a>
             </div>
         </div>
