@@ -13,7 +13,7 @@ module.exports = {
         }
       },
       boxShadow: {
-        "shadow-normal" : "0px 1px 10px rgba(0, 0, 0, 0.05)"
+        "normal" : "0px 1px 10px rgba(0, 0, 0, 0.05)"
       },
       borderRadius : {
         "4xl" : "2rem"
@@ -25,9 +25,17 @@ module.exports = {
         "MorabbaLight" : "Morabba Light",
         "MorabbaMedium" : "Morabba Medium",
         "MorabbaBold" : "Morabba Bold",
+      },
+      letterSpacing: {
+        "tightest" : "-0.065em"
       }
     },
   },
-  plugins: [],
+  plugins: [
+    function({addVariant}) {
+      addVariant('child', '& > *')
+      addVariant('child-hover', '& > *:hover')
+    }
+  ],
 }
 

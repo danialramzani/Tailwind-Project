@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover, user-scalable=yes">
     <title>Coffee Shop</title>
     <link rel="stylesheet" href="./styles/app.css">
     <link rel="icon" href="images/fav-icon.png" type="image/png">
@@ -34,7 +34,7 @@
         </symbol>
     </svg>
 
-    <header class="fixed top-9 right-0 left-0 flex items-center w-[90%] h-24 px-10 py-5 mx-auto bg-black/50 rounded-3xl">
+    <header class="fixed top-9 right-0 left-0 flex items-center w-[90%] h-24 px-10 py-5 mx-auto bg-black/50 rounded-3xl backdrop-blur-[6px]">
         <div class="flex items-center justify-between w-full">
             <!-- Logo & Menu -->
 
@@ -46,34 +46,22 @@
                 </div>
                 <!-- Menu -->
 
-                <ul class="flex gap-x-9 text-xl text-gray-300">
+                <ul class="flex gap-x-9 text-xl text-gray-300 tracking-tightest">
                     <li class="font-DanaMedium text-orange-200">
                         <a href="#">صفحه اصلی</a>
                     </li>
                     <!-- Has Sub -->
-                    <li>
+                    <li class="relative">
                         <a href="#">فروشگاه</a>
                         <!-- Submenu -->
-                        <ul class="hidden">
-                            <li>
-                                <a href="#">قهوه ویژه</a>
-                            </li>
-                            <li>
-                                <a href="#">ویژه در سطح جهانی</a>
-                            </li>
-                            <li>
-                                <a href="#">قهوه درجه یک</a>
-                            </li>
-                            <li>
-                                <a href="#">ترکیبات تجاری</a>
-                            </li>
-                            <li>
-                                <a href="#">کپسول قهوه</a>
-                            </li>
-                            <li>
-                                <a href="#">قهوه زینو برزیلی </a>
-                            </li>
-                        </ul>
+                        <div class="absolute w-52 p-6 space-y-4 text-zinc-700 dark:text-white bg-white text-base border-t-[3px] border-t-orange-300 tracking-normal shadow-normal rounded-2xl child:block">
+                            <a href="#">قهوه ویژه</a>
+                            <a href="#">ویژه در سطح جهانی</a>
+                            <a href="#">قهوه درجه یک</a>
+                            <a href="#">ترکیبات تجاری</a>
+                            <a href="#">کپسول قهوه</a>
+                            <a href="#">قهوه زینو برزیلی </a>
+                        </div>
                     </li>
                     <li>
                         <a href="#">دیکشنری</a>
@@ -109,7 +97,7 @@
                 <!-- Divide Border -->
                  <span class="block w-px h-14 bg-white/20"></span>
                 <!-- Login Link -->
-                <a href="#" class="flex items-center gap-x-2.5">
+                <a href="#" class="flex items-center gap-x-2.5 tracking-tightest">
                     <svg class="w-8 h-8 rotate-180">
                         <use xlink:href="#arrow-left-end-on-rectangle"></use>
                     </svg>
