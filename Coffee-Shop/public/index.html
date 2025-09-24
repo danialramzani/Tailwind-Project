@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa" dir="rtl" class="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -38,7 +38,7 @@
         <div class="flex items-center justify-between w-full">
             <!-- Logo & Menu -->
 
-            <nav class="flex items-center gap-x-9">
+            <nav class="flex items-center gap-x-9 h-14">
                 <!-- Logo -->
 
                 <div>
@@ -46,15 +46,15 @@
                 </div>
                 <!-- Menu -->
 
-                <ul class="flex gap-x-9 text-xl text-gray-300 tracking-tightest">
+                <ul class="flex gap-x-9 h-full text-xl text-gray-300 tracking-tightest child:leading-[56px]">
                     <li class="font-DanaMedium text-orange-200">
                         <a href="#">صفحه اصلی</a>
                     </li>
                     <!-- Has Sub -->
-                    <li class="relative">
-                        <a href="#">فروشگاه</a>
+                    <li class="relative group">
+                        <a href="#" class="group-hover:text-orange-300">فروشگاه</a>
                         <!-- Submenu -->
-                        <div class="absolute w-52 p-6 space-y-4 text-zinc-700 dark:text-white bg-white text-base border-t-[3px] border-t-orange-300 tracking-normal shadow-normal rounded-2xl child:block">
+                        <div class="absolute top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all w-52 p-6 space-y-4 text-zinc-700 dark:text-white bg-white dark:bg-zinc-700 text-base border-t-[3px] border-t-orange-300 tracking-normal shadow-normal rounded-2xl child:block child:transition-colors child-hover:text-orange-300">
                             <a href="#">قهوه ویژه</a>
                             <a href="#">ویژه در سطح جهانی</a>
                             <a href="#">قهوه درجه یک</a>
