@@ -613,7 +613,7 @@ video {
 }
 
 body{
-  background-image: url("../images/headerBgDesktop.png");
+  background-image: url("../images/headerBgDesktop.webp");
   background-repeat: no-repeat;
 }
 
@@ -670,17 +670,16 @@ body{
   display: none;
 }
 
-.size-6 {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
 .h-14 {
   height: 3.5rem;
 }
 
 .h-24 {
   height: 6rem;
+}
+
+.h-4 {
+  height: 1rem;
 }
 
 .h-8 {
@@ -691,8 +690,8 @@ body{
   height: 100%;
 }
 
-.h-4 {
-  height: 1rem;
+.w-4 {
+  width: 1rem;
 }
 
 .w-52 {
@@ -701,6 +700,10 @@ body{
 
 .w-8 {
   width: 2rem;
+}
+
+.w-\[400px\] {
+  width: 400px;
 }
 
 .w-\[90\%\] {
@@ -713,26 +716,6 @@ body{
 
 .w-px {
   width: 1px;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[400\] {
-  width: 400;
-}
-
-.w-\[400px\] {
-  width: 400px;
-}
-
-.w-5 {
-  width: 1.25rem;
-}
-
-.w-4 {
-  width: 1rem;
 }
 
 .rotate-180 {
@@ -813,12 +796,12 @@ body{
   background-color: rgb(255 255 255 / 0.2);
 }
 
-.p-6 {
-  padding: 1.5rem;
-}
-
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-10 {
@@ -826,14 +809,14 @@ body{
   padding-right: 2.5rem;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .font-Dana {
@@ -854,11 +837,6 @@ body{
   line-height: 1.75rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -868,12 +846,12 @@ body{
   letter-spacing: 0em;
 }
 
-.tracking-tightest {
-  letter-spacing: -0.065em;
-}
-
 .tracking-tighter {
   letter-spacing: -0.05em;
+}
+
+.tracking-tightest {
+  letter-spacing: -0.065em;
 }
 
 .text-gray-300 {
@@ -886,14 +864,19 @@ body{
   color: rgb(254 215 170 / var(--tw-text-opacity, 1));
 }
 
+.text-orange-300 {
+  --tw-text-opacity: 1;
+  color: rgb(253 186 116 / var(--tw-text-opacity, 1));
+}
+
 .text-zinc-700 {
   --tw-text-opacity: 1;
   color: rgb(63 63 70 / var(--tw-text-opacity, 1));
 }
 
-.text-orange-300 {
+.text-teal-600 {
   --tw-text-opacity: 1;
-  color: rgb(253 186 116 / var(--tw-text-opacity, 1));
+  color: rgb(13 148 136 / var(--tw-text-opacity, 1));
 }
 
 .opacity-0 {
@@ -929,10 +912,6 @@ body{
 
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;
-}
-
-.child\:block > * {
-  display: block;
 }
 
 .child\:inline-block > * {
@@ -975,4 +954,9 @@ body{
 .dark\:text-white:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.dark\:text-emerald-500:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(16 185 129 / var(--tw-text-opacity, 1));
 }
