@@ -51,6 +51,9 @@
 }
 
 @layer components{
+    .submenu{
+        @apply flex flex-col gap-y-3 pr-7 mt-3 text-sm text-zinc-600 dark:text-white;
+    }
     .submenu__item--active::after{
         content: "";
         display: block;
