@@ -278,13 +278,13 @@
     <div class="flex md:hidden items-center h-16 justify-between bg-white dark:bg-zinc-700 px-4">
 
         <!-- Nav Icon -->
-        <div>
+        <div class="nav-icon">
             <svg class="w-6 h-6 text-zinc-700 dark:text-white">
                 <use href="#bars3"></use>
             </svg>
         </div>
         <!-- Nav -->
-        <div class="fixed top-0 bottom-0 right-0 w-64 min-h-screen pt-3 px-4 bg-white dark:bg-zinc-700 z-20">
+        <div class="nav fixed top-0 bottom-0 -right-64 w-64 min-h-screen pt-3 px-4 bg-white dark:bg-zinc-700 z-20 transition-all overflow-y-auto">
             <!-- Nav Header  -->
             <div class="flex items-center justify-between pb-5 mb-6 border-b border-b-gray-100 dark:border-b-white/10">
                 <div class="flex items-center gap-x-3.5">
@@ -295,9 +295,11 @@
                         <use href="#Logo_type"></use>
                     </svg>
                 </div>
-                <svg class="w-6 h-6 text-zinc-600 dark:text-white">
+                <div class="nav-close-btn">
+                    <svg class="w-6 h-6 text-zinc-600 dark:text-white">
                     <use href="#x-mark"></use>
                 </svg>
+                </div>
             </div>
 
             <!-- Nav Menu -->
@@ -312,7 +314,7 @@
             <ul class="child:pr-2.5 space-y-6 text-zinc-600 dark:text-white">
 
                 <li>
-                    <div class="flex items-center justify-between">
+                    <div class="flex items-center justify-between transition-colors">
                         <a href="#" class="flex items-center gap-x-2">
                             <svg class="w-5 h-5">
                                 <use href="#bag"></use>
@@ -424,7 +426,7 @@
 
 
 
-    <div class="overlay md:hidden fixed inset-0 w-full h-full bg-black/40 z-10"></div>
+    <div class="overlay"></div>
     <script src="scripts/app.js"></script>
 </body>
 

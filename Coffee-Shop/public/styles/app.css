@@ -619,7 +619,7 @@ body{
 
 .submenu {
   margin-top: 0.75rem;
-  display: flex;
+  display: none;
   flex-direction: column;
   row-gap: 0.75rem;
   padding-right: 1.75rem;
@@ -632,6 +632,10 @@ body{
 .submenu:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.submenu--open {
+  display: flex;
 }
 
 .submenu__item--active::after{
@@ -696,6 +700,14 @@ body{
 
 .top-full {
   top: 100%;
+}
+
+.-right-0 {
+  right: -0px;
+}
+
+.-right-64 {
+  right: -16rem;
 }
 
 .z-10 {
