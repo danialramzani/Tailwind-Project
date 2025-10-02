@@ -699,6 +699,10 @@ body{
   position: relative;
 }
 
+.-left-64 {
+  left: -16rem;
+}
+
 .-right-64 {
   right: -16rem;
 }
@@ -727,18 +731,6 @@ body{
   top: 100%;
 }
 
-.left-64 {
-  left: 16rem;
-}
-
-.-left-0 {
-  left: -0px;
-}
-
-.-left-64 {
-  left: -16rem;
-}
-
 .z-20 {
   z-index: 20;
 }
@@ -752,8 +744,16 @@ body{
   margin-bottom: 1rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .mt-5 {
@@ -764,16 +764,8 @@ body{
   margin-top: 2rem;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
 .mt-auto {
   margin-top: auto;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
 }
 
 .line-clamp-2 {
@@ -812,6 +804,10 @@ body{
   height: 2.5rem;
 }
 
+.h-11 {
+  height: 2.75rem;
+}
+
 .h-14 {
   height: 3.5rem;
 }
@@ -844,20 +840,20 @@ body{
   height: 2rem;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.h-11 {
-  height: 2.75rem;
-}
-
 .h-\[90px\] {
   height: 90px;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .min-h-screen {
   min-height: 100vh;
+}
+
+.w-28 {
+  width: 7rem;
 }
 
 .w-30 {
@@ -904,6 +900,10 @@ body{
   width: 41px;
 }
 
+.w-\[90px\] {
+  width: 90px;
+}
+
 .w-\[98\%\] {
   width: 98%;
 }
@@ -916,20 +916,8 @@ body{
   width: 1px;
 }
 
-.w-28 {
-  width: 7rem;
-}
-
-.w-\[90px\] {
-  width: 90px;
-}
-
 .shrink-0 {
   flex-shrink: 0;
-}
-
-.flex-grow {
-  flex-grow: 1;
 }
 
 .rotate-180 {
@@ -965,6 +953,11 @@ body{
   justify-content: space-between;
 }
 
+.gap-x-1 {
+  -moz-column-gap: 0.25rem;
+       column-gap: 0.25rem;
+}
+
 .gap-x-2 {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
@@ -995,17 +988,12 @@ body{
        column-gap: 1.5rem;
 }
 
-.gap-y-6 {
-  row-gap: 1.5rem;
-}
-
-.gap-x-1 {
-  -moz-column-gap: 0.25rem;
-       column-gap: 0.25rem;
-}
-
 .gap-y-1\.5 {
   row-gap: 0.375rem;
+}
+
+.gap-y-6 {
+  row-gap: 1.5rem;
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
@@ -1300,21 +1288,17 @@ body{
   display: inline-block;
 }
 
-.child\:border-b > * {
-  border-bottom-width: 1px;
-}
-
 .child\:py-5 > * {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
 
-.child\:pr-2\.5 > * {
-  padding-right: 0.625rem;
-}
-
 .child\:pb-5 > * {
   padding-bottom: 1.25rem;
+}
+
+.child\:pr-2\.5 > * {
+  padding-right: 0.625rem;
 }
 
 .child\:leading-\[56px\] > * {

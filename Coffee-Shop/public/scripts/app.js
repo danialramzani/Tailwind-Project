@@ -5,6 +5,9 @@ const navOpenBtn = document.querySelector(".nav-icon");
 const navCloseBtn = document.querySelector(".nav-close-btn");
 const nav = document.querySelector(".nav");
 const overlay = document.querySelector(".overlay");
+const cartOpenBtn = document.querySelector(".cart-icon");
+const cartCloseBtn = document.querySelector(".cart-close-btn");
+const cart = document.querySelector(".cart");
 
 toggleThemeBtns.forEach(btn => {
     btn.addEventListener("click", function (){
@@ -21,20 +24,35 @@ submenuOpenBtn.addEventListener("click", (e) => {
     e.currentTarget.parentElement.classList.toggle("text-orange-300");
     submenu.classList.toggle("submenu--open");
 })
-navOpenBtn.addEventListener("click",() => {
-    nav.classList.remove("-right-64");
-    nav.classList.add("right-0");
-    overlay.classList.add("overlay--visible");
-
-})
-
 
 function closeNav() {
     nav.classList.remove("right-0");
     nav.classList.add("-right-64");
     overlay.classList.remove("overlay--visible");
 }
+function closeCart() {
+    cart.classList.remove("left-0");
+    cart.classList.add("-left-64");
+    overlay.classList.remove("overlay--visible");
+}
 
-navCloseBtn.addEventListener("click",closeNav)
-overlay.addEventListener("click",closeNav)
+
+navOpenBtn.addEventListener("click",() => {
+    nav.classList.remove("-right-64");
+    nav.classList.add("right-0");
+    overlay.classList.add("overlay--visible");
+    overlay.addEventListener("click", closeNav)
+})
+cartOpenBtn.addEventListener("click",() => {
+    cart.classList.remove("-left-64");
+    cart.classList.add("left-0");
+    overlay.classList.add("overlay--visible");
+    overlay.addEventListener("click", closeCart)
+})
+
+navCloseBtn.addEventListener("click", closeNav);
+cartCloseBtn.addEventListener("click", closeCart);
+
+
+
 
