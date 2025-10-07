@@ -144,5 +144,6 @@
         inset: 0;
         margin: auto;
         background-color:#EF4444;
+        top: -2px;
     }
 }
