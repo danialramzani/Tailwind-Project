@@ -16,7 +16,7 @@
     </script>
 </head>
 
-<body class="font-Dana bg-gray-100 dark:bg-zinc-800 h-[2000px]">
+<body class="font-Dana bg-gray-100 dark:bg-zinc-800">
     <!-- All App Icons -->
     <svg class="hidden">
         <symbol id="shopping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -385,7 +385,7 @@
 
             <!-- Nav Footer -->
             <div
-                class="flex flex-col items-start gap-y-6 text-orange-300 ptw-8 px-2.5 mt-8 border-t border-t-gray-100 dark:border-t-white/10">
+                class="flex flex-col items-start gap-y-6 text-orange-300 ptw-8 px-2.5 mt-8 border-t border-t-gray-100 dark:border-t-white/10 pt-[32px]">
 
                 <a href="#" class="inline-flex items-center gap-x-2">
                     <svg class="w-6 h-6 rotate-180">
@@ -539,9 +539,10 @@
                 </svg>
             </div>
         </section>
-        <section class="products pt-8 md:pt-24 lg:pt-48">
+        <section class="products pt-8 md:pt-24 lg:pt-48 pb-20">
 
             <div class="container">
+                <!-- Section Head -->
                 <div class="flex items-end justify-between mb-5 md:mb-12">
                     <div>
                         <h3 class="section-title">جدیدترین محصولات</h3>
@@ -555,6 +556,33 @@
                         </svg>
                     </a>
                 </div>
+                <!-- Section Body -->
+                 <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 md:gap-5">
+                    <div class="p-5 bg-white dark:bg-zinc-700 shadow-normal rounded-2xl">
+                        <div class="relative mb-5">
+                            <img src="images/products/p1.png" alt="P 1">
+                            <span class="absolute top-1.5 right-1.5 block h-[30px] leading-[34px] font-DanaDemiBold bg-orange-300 text-white dark:text-zinc-700 px-3.5 rounded-full">12%</span>
+                        </div>
+                        <h5 class="font-DanaMedium text-xl text-zinc-700 dark:text-white line-clamp-2">قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی</h5>
+                        <div class="flex gap-x-2.5 mt-2.5">
+                            <div class="text-teal-600 dark:text-emerald-500">
+                                <span class="font-DanaDemiBold text-xl">154,000</span>
+                                <span class="text-sm tracking-tighter">تومان</span>
+                            </div>
+                            <div class="offer">
+                                <span class="text-xl">175,000</span>
+                                <span class="text-sm tracking-tighter">تومان</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5 bg-white dark:bg-zinc-700 shadow-normal rounded-2xl"></div>
+                    <div class="p-5 bg-white dark:bg-zinc-700 shadow-normal rounded-2xl"></div>
+                    <div class="p-5 bg-white dark:bg-zinc-700 shadow-normal rounded-2xl"></div>
+                    <div class="p-5 bg-white dark:bg-zinc-700 shadow-normal rounded-2xl"></div>
+                    <div class="p-5 bg-white dark:bg-zinc-700 shadow-normal rounded-2xl"></div>
+                    <div class="p-5 bg-white dark:bg-zinc-700 shadow-normal rounded-2xl"></div>
+                    <div class="p-5 bg-white dark:bg-zinc-700 shadow-normal rounded-2xl"></div>
+                 </div>
             </div>
         </section>
     </main>
