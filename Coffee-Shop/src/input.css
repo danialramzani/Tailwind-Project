@@ -151,12 +151,18 @@
     .category-banner-item1{
         background: linear-gradient(  270deg ,rgba(0, 0, 0, 0.6) 33.85%, rgba(243, 244, 246, 0.1) 100%), url("../images/categories/category-right.jpg");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover  ;
     }
     .category-banner-item2{
         background: linear-gradient(  270deg ,rgba(0, 0, 0, 0.6) 33.85%, rgba(243, 244, 246, 0.1) 100%), url("../images/categories/category-left.jpg");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover  ;
+    }
+
+
+    .swiper-button-prev-custom,
+    .swiper-button-next-custom{
+        @apply flex-center w-9 h-9 md:w-10 md:h-10 bg-white text-zinc-700 dark:bg-zinc-700 dark:text-white shadow-normal rounded-full hover:bg-gray-300 dark:hover:bg-white dark:hover:text-zinc-700 transition-all;
     }
 }
 
