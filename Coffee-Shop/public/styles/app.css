@@ -1133,8 +1133,16 @@ html.dark .services::after,
   margin-top: auto;
 }
 
-.mb-4\.5 {
-  margin-bottom: 1.125rem;
+.mt-\[\] {
+  margin-top: ;
+}
+
+.mt-\[26px\] {
+  margin-top: 26px;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .line-clamp-2 {
@@ -1277,6 +1285,10 @@ html.dark .services::after,
   height: 1px;
 }
 
+.h-44 {
+  height: 11rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1287,6 +1299,10 @@ html.dark .services::after,
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-2 {
+  width: 0.5rem;
 }
 
 .w-25 {
@@ -1397,24 +1413,12 @@ html.dark .services::after,
   width: 1px;
 }
 
-.w-2\.5 {
-  width: 0.625rem;
-}
-
-.w-2 {
-  width: 0.5rem;
-}
-
 .max-w-\[193px\] {
   max-width: 193px;
 }
 
 .max-w-\[201px\] {
   max-width: 201px;
-}
-
-.max-w-\[\] {
-  max-width: ;
 }
 
 .max-w-\[606px\] {
@@ -1573,6 +1577,24 @@ html.dark .services::after,
   row-gap: 2.25rem;
 }
 
+.gap-y-0 {
+  row-gap: 0px;
+}
+
+.gap-y-2\.5 {
+  row-gap: 0.625rem;
+}
+
+.gap-x-16 {
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+}
+
+.gap-x-10 {
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+}
+
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1681,6 +1703,10 @@ html.dark .services::after,
   background-color: rgb(0 0 0 / 0.5);
 }
 
+.bg-current {
+  background-color: currentColor;
+}
+
 .bg-emerald-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(5 150 105 / var(--tw-bg-opacity, 1));
@@ -1721,10 +1747,6 @@ html.dark .services::after,
 .bg-zinc-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(63 63 70 / var(--tw-bg-opacity, 1));
-}
-
-.bg-current {
-  background-color: currentColor;
 }
 
 .bg-gradient-to-r {
@@ -1956,16 +1978,6 @@ html.dark .services::after,
   line-height: 24px;
 }
 
-.text-xl\/\[\] {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-xl\/\[48px\] {
-  font-size: 1.25rem;
-  line-height: 48px;
-}
-
 .tracking-normal {
   letter-spacing: 0em;
 }
@@ -2036,10 +2048,6 @@ html.dark .services::after,
 .text-zinc-700 {
   --tw-text-opacity: 1;
   color: rgb(63 63 70 / var(--tw-text-opacity, 1));
-}
-
-.text-current {
-  color: currentColor;
 }
 
 .opacity-0 {
@@ -2122,6 +2130,11 @@ html.dark .services::after,
   background-color: rgb(15 118 110 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:text-orange-300:hover {
+  --tw-text-opacity: 1;
+  color: rgb(253 186 116 / var(--tw-text-opacity, 1));
+}
+
 .hover\:text-teal-600:hover {
   --tw-text-opacity: 1;
   color: rgb(13 148 136 / var(--tw-text-opacity, 1));
@@ -2130,11 +2143,6 @@ html.dark .services::after,
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.hover\:text-orange-300:hover {
-  --tw-text-opacity: 1;
-  color: rgb(253 186 116 / var(--tw-text-opacity, 1));
 }
 
 .group:hover .group-hover\:visible {
@@ -2378,6 +2386,10 @@ html.dark .services::after,
     margin-bottom: 9rem;
   }
 
+  .md\:mb-4\.5 {
+    margin-bottom: 1.125rem;
+  }
+
   .md\:mb-5 {
     margin-bottom: 1.25rem;
   }
@@ -2398,8 +2410,8 @@ html.dark .services::after,
     margin-top: 1.5rem;
   }
 
-  .md\:mb-4\.5 {
-    margin-bottom: 1.125rem;
+  .md\:mt-\[26px\] {
+    margin-top: 26px;
   }
 
   .md\:inline-block {
@@ -2470,6 +2482,10 @@ html.dark .services::after,
     width: 3rem;
   }
 
+  .md\:w-2\.5 {
+    width: 0.625rem;
+  }
+
   .md\:w-50 {
     width: 12.5rem;
   }
@@ -2504,10 +2520,6 @@ html.dark .services::after,
 
   .md\:w-auto {
     width: auto;
-  }
-
-  .md\:w-2\.5 {
-    width: 0.625rem;
   }
 
   .md\:max-w-\[460px\] {
@@ -2545,6 +2557,19 @@ html.dark .services::after,
          column-gap: 18px;
   }
 
+  .md\:gap-y-4 {
+    row-gap: 1rem;
+  }
+
+  .md\:gap-y-5 {
+    row-gap: 1.25rem;
+  }
+
+  .md\:gap-x-16 {
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
+  }
+
   .md\:border-2 {
     border-width: 2px;
   }
@@ -2557,23 +2582,22 @@ html.dark .services::after,
     padding: 1.25rem;
   }
 
-  .md\:px-3\.5 {
-    padding-left: 0.875rem;
-    padding-right: 0.875rem;
-  }
-
-  .md\:py-11 {
-    padding-top: 2.75rem;
-    padding-bottom: 2.75rem;
-  }
-
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
   }
 
+  .md\:px-3\.5 {
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+  }
+
   .md\:pb-1 {
     padding-bottom: 0.25rem;
+  }
+
+  .md\:pb-11 {
+    padding-bottom: 2.75rem;
   }
 
   .md\:pb-2 {
@@ -2590,14 +2614,6 @@ html.dark .services::after,
 
   .md\:pt-5 {
     padding-top: 1.25rem;
-  }
-
-  .md\:pb-11 {
-    padding-bottom: 2.75rem;
-  }
-
-  .md\:pt-\[\] {
-    padding-top: ;
   }
 
   .md\:pt-\[62px\] {
